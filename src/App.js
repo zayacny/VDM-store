@@ -11,11 +11,12 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://duckduckgo.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Хлопці! Вітаю вас на першому проекті!
+          Це ветка DEV
         </a>
       </header>
     </div>
