@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Хлопці! Вітаю вас на першому проекті! 
+          Хлопці! Вітаю вас на першому проекті!
         </a>
       </header>
     </div>
