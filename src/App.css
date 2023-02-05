@@ -30,6 +30,9 @@
 .App-link.secondary {
   color: magenta;
 }
+.App-link.three {
+  color: rgb(27, 215, 6);
+}
 
 @keyframes App-logo-spin {
   from {

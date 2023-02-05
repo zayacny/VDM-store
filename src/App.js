@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -25,6 +25,14 @@ function App() {
           rel="noopener noreferrer"
         >
           Це вєтка DEV
+        </a>
+        <a
+          className="App-link three"
+          href="https://www.instagram.com/zelenskiy_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Green Link
         </a>
       </header>
     </div>
