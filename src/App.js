@@ -34,6 +34,14 @@ function App() {
         >
           Green Link
         </a>
+        <a
+          className="App-link four"
+          href="https://memesmix.net/meme/cn0k3v"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Another one 🔥🔥🔥
+        </a>
       </header>
     </div>
   );
