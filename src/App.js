@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import FilmsList from './components/FilmsList.js'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           Хлопці! Вітаю вас на першому проекті!
         </a>
       </header>
+      <div>
+        <FilmsList></FilmsList>
+      </div>
     </div>
   );
 }
