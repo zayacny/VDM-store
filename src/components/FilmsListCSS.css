@@ -1,11 +1,11 @@
 .divStyle {
-  width: 100vw;
+  display: grid;
+  justify-items: start;
+
+  width: -webkit-fill-available;
   height: 200px;
   background-color: bisque;
   color: blue;
   border: 1px solid;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }

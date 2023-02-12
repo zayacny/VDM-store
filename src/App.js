@@ -18,8 +18,7 @@ function App() {
         >
           Хлопці! Вітаю вас на першому проекті!
         </a>
-
-        <FilmsList></FilmsList>
+        <FilmsList></FilmsList>g
       </header>
     </div>
   );
