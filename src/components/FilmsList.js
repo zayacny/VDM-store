@@ -1,6 +1,6 @@
 import React from "react";
-import "./FilmsListCSS.css";
-export const films = [
+import "./FilmsList.css";
+const films = [
   { name: "titanic", year: 1998 },
   { name: "black widow", year: 2012 },
   { name: "sherlok", year: 2005 },
@@ -9,10 +9,10 @@ export const films = [
 ];
 
 export default function FilmsList() {
-  const filmsMap = films.map((film) => (
+  const listOfFilms = films.map((film) => (
     <li key={film.name}>
       {film.name} ({film.year})
     </li>
   ));
-  return <ol className="divStyle">{filmsMap}</ol>;
+  return <ol className="divStyle">{listOfFilms}</ol>;
 }
