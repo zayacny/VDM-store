@@ -1,17 +1,19 @@
 import React, {useState} from "react";
 import './index.css'
+import RatingMovie from './RatingMovie'
 
 export default function UserText() {
   const [userText, setUserText] = useState('');
 
   return (
-    <div className="block-user-text">
+    <>
       <h1>What you think abou it?</h1>
-        <input className="input-user-text" value={userText}
+        <RatingMovie value="1"/>
+        <input value={userText}
           onChange={e=> setUserText(e.target.value)}
         />
         <br></br>
-        <button className="btn-post">Post</button>
-    </div>
+        <button>Post</button>
+    </>
   );
 }
