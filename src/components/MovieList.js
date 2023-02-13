@@ -26,7 +26,7 @@ const MovieList = () => (
       year={1998}
       rateImdb={8.9}
       genre="drama"
-      storyLine="84 years later, a 100 year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose"
+      storyLine="A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
     />
   </div>
 );
