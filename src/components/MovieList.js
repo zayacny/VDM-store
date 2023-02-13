@@ -21,6 +21,22 @@ const MovieList = () => (
       storyLine="Three friends attempt to recapture their glory days by opening up a fraternity near their alma mater"
     />
     <Movie
+      img="https://m.media-amazon.com/images/M/MV5BM2JlMjQ1MjItNmJjMS00Nzg1LTk4ZDItNDgyNjg2OTliMWM5XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_FMjpg_UX580_.jpg"
+      name="Old School"
+      year={2003}
+      rateImdb={7.0}
+      genre="comedy"
+      storyLine="Three friends attempt to recapture their glory days by opening up a fraternity near their alma mater"
+    />
+    <Movie
+      img="https://m.media-amazon.com/images/M/MV5BM2JlMjQ1MjItNmJjMS00Nzg1LTk4ZDItNDgyNjg2OTliMWM5XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_FMjpg_UX580_.jpg"
+      name="Old School"
+      year={2003}
+      rateImdb={7.0}
+      genre="comedy"
+      storyLine="Three friends attempt to recapture their glory days by opening up a fraternity near their alma mater"
+    />
+    <Movie
       img="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UY720_.jpg"
       name="Titanic"
       year={1998}

@@ -1,9 +1,12 @@
-.movie-image {
+.movie-container {
+  flex: 1;
+  border: 1px solid #61dafb;
+  margin: 10px auto;
+  border-radius: 20px;
   max-width: 400px;
 }
 
-.movie-container {
-  flex: 1;
+.movie-image {
+  max-width: 400px;
+  border-radius: 20px;
 }
-
-.movie-info {}
