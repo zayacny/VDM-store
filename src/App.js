@@ -1,23 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import MovieList from "./components/MovieList";
 import Movie from "./components/Movie";
-
-const Home = () => {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-};
-
-const About = () => {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-};
+import About from "./components/About";
 
 function App() {
   return (
@@ -36,11 +23,14 @@ function App() {
             <Link to="/" className="nav-link">
               Home
             </Link>
-            <Link to="/about" className="nav-link">
-              About
+            <Link to="/movie-list" className="nav-link">
+              Movie List
             </Link>
             <Link to="/movie" className="nav-link">
               Movie
+            </Link>
+            <Link to="/about" className="nav-link">
+              About
             </Link>
             <br></br>
           </div>
@@ -49,7 +39,7 @@ function App() {
         <main className="App-main">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
+            <Route path="/movie-list" element={<MovieList />}></Route>
             <Route
               path="/movie"
               element={
@@ -63,6 +53,7 @@ function App() {
                 />
               }
             ></Route>
+            <Route path="/about" element={<About />}></Route>
           </Routes>
         </main>
 

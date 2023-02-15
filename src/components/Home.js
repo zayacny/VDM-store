@@ -1,9 +1,9 @@
 import React from "react";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
+      <h2>Welcome to the Home Page</h2>
       <p>
         Here you can find the latest information about our products and
         services.
@@ -12,4 +12,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
