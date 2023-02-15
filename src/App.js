@@ -14,6 +14,7 @@ function App() {
         >
           <img src={logo} className="App-logo" alt="logo" />
         </a>
+        <h1>The Shawshank Redemption</h1>
       </header>
       <main className="App-main">
         <Movie

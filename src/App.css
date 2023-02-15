@@ -12,7 +12,8 @@
 .App-header {
   position: sticky;
   top: 0;
-  /* display: flex; */
+  display: flex;
+  align-items: center;
   background-color: #282c34;
   color: white;
   font-size: calc(10px + 2vmin);
