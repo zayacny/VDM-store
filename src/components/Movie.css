@@ -1,29 +1,44 @@
-.movie-container {
-  border: 1px solid #282c34;
+.movie-container,
+.cell {
   margin: 10px;
 }
 
-
 .movie-info {
   display: flex;
-  padding: 10px;
   height: 60vmin;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .movie-story {
-  padding: 10px;
   height: 10vmin;
-  border: 1px solid greenyellow;
 }
 
 .movie-info img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
+}
+
+.general-info,
+.movie-story,
+.movie-info {
+  padding: 10px;
 }
 
 .cell {
   flex: 1 1 auto;
-  /* background-color: green; */
-  border: 1px solid red;
+}
+
+.movie-story {
+  margin-top: 10px;
+}
+
+.cell,
+.movie-story {
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }

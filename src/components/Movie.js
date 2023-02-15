@@ -8,7 +8,7 @@ const Movie = ({ img, name, year, rateImdb, genre, storyLine }) => (
         <div className="movie-image cell">
           <img src={img} alt={name} />
         </div>
-        <div className="cell">
+        <div className="general-info cell">
           <h3>General info:</h3>
           <p>Name: {name}</p>
           <p>Year: {year}</p>
