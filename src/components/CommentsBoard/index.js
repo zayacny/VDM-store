@@ -1,10 +1,10 @@
 import React/**{useState}*/ from "react";
-import UserText from "./UserText";
+import UserTextAndRate from "./UserTextAndRate";
 
 export default function ComponentsBoard() {
   return (
     <>
-      <UserText/>
+      <UserTextAndRate/>
     </>
   );
 }

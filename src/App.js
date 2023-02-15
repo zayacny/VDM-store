@@ -1,5 +1,5 @@
 import './App.css';
-import { Container, Button, Box, CssBaseline } from '@mui/material';
+import { Container, Box, CssBaseline } from '@mui/material';
 import React from 'react';
 
 import CommentsBoard from './components/CommentsBoard'
@@ -8,9 +8,8 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="sm">
-        <Box sx={{ bgcolor: "#cfe8fc", height: "100vh" }}>
-          <Button variant="contained">Hello World</Button>
+      <Container maxWidth="lg">
+        <Box sx={{ bgcolor: "#282c34", height: "100vh" }}>
           <CommentsBoard/>
         </Box>
       </Container>
