@@ -3,7 +3,16 @@
   padding: 10px 20px;
   background-color: #282c34;
   color: white;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.movie-info,
+.movie-story {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 .movie-info {
