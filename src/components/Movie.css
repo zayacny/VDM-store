@@ -7,12 +7,12 @@
   display: flex;
   height: 60vmin;
 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
   border-radius: 5px;
 }
 
 .movie-story {
-  height: 10vmin;
+  /* height: 10vmin; */
 }
 
 .movie-info img {
@@ -25,7 +25,9 @@
 .general-info,
 .movie-story,
 .movie-info {
-  padding: 10px;
+  /* padding: 10px; */
+  color: #8D8C8C;
+  ;
 }
 
 .cell {
@@ -36,9 +38,10 @@
   margin-top: 10px;
 }
 
-.cell,
+/* .cell, */
 .movie-story {
-  padding: 10px;
+  margin: 0 15px;
+  padding: 21px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }

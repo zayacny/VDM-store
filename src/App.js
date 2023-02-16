@@ -31,10 +31,8 @@ function App() {
         </a>
       </header>
       <main className="App-main">
-        <h2 className="Movie-header">{movie.name}</h2>
         <Movie {...movie} />
       </main>
-      <footer className="App-footer"></footer>
     </div>
   );
 }
