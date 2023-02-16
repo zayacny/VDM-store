@@ -16,14 +16,16 @@ const Movie = ({
 }) => (
   <div className="movie-container">
     <div className="movie-container-wrapper">
-      <h2 className="Movie-header">
-        {name} / {originalName} ({year})
-      </h2>
+      <div className="movie-header">
+        <h2>
+          {name} / {originalName} ({year})
+        </h2>
+      </div>
       <div className="movie-info">
         <div className="movie-image cell">
           <img src={img} alt={name} />
         </div>
-        <div className="general-info cell">
+        <div className="cell">
           <p>Название: </p>
           <p>Оригинальное название:</p>
           <p>IMDB рейтинг: </p>
@@ -33,7 +35,7 @@ const Movie = ({
           <p>Жанр: </p>
           <p>Время: </p>
         </div>
-        <div className="general-info cell">
+        <div className="cell">
           <p> {name}</p>
           <p> {originalName}</p>
           <p> {rateImdb}</p>

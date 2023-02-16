@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import movieComponentImage from "./components/images/topgun.jpg";
 import "./App.css";
 import Movie from "./components/Movie";
+import Footer from "./components/Footer";
 
 function App() {
   const movie = {
@@ -30,9 +31,12 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </a>
       </header>
+
       <main className="App-main">
         <Movie {...movie} />
       </main>
+
+      <Footer />
     </div>
   );
 }
