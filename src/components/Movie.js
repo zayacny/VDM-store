@@ -1,7 +1,19 @@
 import React from "react";
 import "./Movie.css";
+// import ""
 
-const Movie = ({ img, name, year, rateImdb, genre, storyLine }) => (
+const Movie = ({
+  img,
+  name,
+  originalName,
+  rateImdb,
+  year,
+  country,
+  director,
+  genre,
+  duration,
+  storyLine,
+}) => (
   <div className="movie-container">
     <div className="movie-container-wrapper">
       <div className="movie-info">
@@ -9,18 +21,19 @@ const Movie = ({ img, name, year, rateImdb, genre, storyLine }) => (
           <img src={img} alt={name} />
         </div>
         <div className="general-info cell">
-          <h3>General info:</h3>
-          <p>Name: {name}</p>
-          <p>Year: {year}</p>
-          <p>IMDB rating: {rateImdb}</p>
+          <p>Название: {name}</p>
+          <p>Оригинальное название: {originalName}</p>
+          <p>IMDB рейтинг: {rateImdb}</p>
+          <p>Год: {year}</p>
+          <p>Страна: {country}</p>
+          <p>Режиссер: {director}</p>
           <p>Genre: {genre}</p>
+          <p>Время: {duration}</p>
         </div>
       </div>
-
-      <div className="movie-story ">
-        <h3>StoryLine:</h3>
-        <p>{storyLine}</p>
-      </div>
+    </div>
+    <div className="movie-story ">
+      <p>{storyLine}</p>
     </div>
   </div>
 );

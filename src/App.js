@@ -1,8 +1,23 @@
 import logo from "./logo.svg";
+import movieComponentImage from "./components/images/topgun.jpg";
 import "./App.css";
 import Movie from "./components/Movie";
 
 function App() {
+  const movie = {
+    img: movieComponentImage,
+    name: "Топ Ган: Мэверик",
+    originalName: "Top Gun: Maverick",
+    rateImdb: 8.3,
+    year: 2022,
+    country: "США",
+    director: "Джозеф Косински",
+    genre: "Боевики",
+    duration: "02:10:32",
+    storyLine:
+      "Пит Митчелл - один из лучших пилотов, которому дали прозвище Мэверик. Он уже тридцать лет занимается любимым делом, но так и остается инструктором. Герой и сам не заинтересован в повышении по службе, поскольку это помешает ему проводить много времени за штурвалом самолета. В очередной группе новобранцев оказывается лейтенант Брэдли Брэдшоу, сын Ника Брэдшоу. С этого момента Питу предстоит сильно постараться, чтобы справиться с давними переживаниями. Он просто не имеет права отвлекаться от работы, поскольку ему необходимо отобрать группу лучших пилотов для выполнения особо важного задания...",
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -14,17 +29,10 @@ function App() {
         >
           <img src={logo} className="App-logo" alt="logo" />
         </a>
-        <h1>The Shawshank Redemption</h1>
       </header>
       <main className="App-main">
-        <Movie
-          img="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
-          name="The Shawshank Redemption"
-          year={1994}
-          rateImdb={9.2}
-          genre="drama"
-          storyLine="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
-        />
+        <h2 className="Movie-header">{movie.name}</h2>
+        <Movie {...movie} />
       </main>
       <footer className="App-footer"></footer>
     </div>
