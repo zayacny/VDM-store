@@ -1,11 +1,18 @@
 .divStyle {
-  display: grid;
-  justify-items: start;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   width: -webkit-fill-available;
-  height: 200px;
-  background-color: bisque;
-  color: blue;
+  height: fit-content;
+  background-color: white;
   border: 1px solid;
-  border-radius: 10px;
+}
+.liStyle {
+  color: black;
+  text-decoration: none;
+}
+.liStyle:hover {
+  color: blue;
+  text-decoration: underline;
 }
