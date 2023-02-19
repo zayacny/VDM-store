@@ -2,28 +2,17 @@ import React from "react";
 import "./Movie.css";
 // import ""
 
-const Movie = ({
-  img,
-  name,
-  originalName,
-  rateImdb,
-  year,
-  country,
-  director,
-  genre,
-  duration,
-  storyLine,
-}) => (
+const Movie = (movieData) => (
   <div className="movie-container">
     <div className="movie-container-wrapper">
       <div className="movie-header">
         <h2>
-          {name} / {originalName} ({year})
+          {movieData.name} / {movieData.originalName} ({movieData.year})
         </h2>
       </div>
       <div className="movie-info">
         <div className="movie-image cell">
-          <img src={img} alt={name} />
+          <img src={movieData.img} alt={movieData.name} />
         </div>
         <div className="cell">
           <p>Название: </p>
@@ -36,19 +25,19 @@ const Movie = ({
           <p>Время: </p>
         </div>
         <div className="cell">
-          <p> {name}</p>
-          <p> {originalName}</p>
-          <p> {rateImdb}</p>
-          <p> {year}</p>
-          <p> {country}</p>
-          <p> {director}</p>
-          <p> {genre}</p>
-          <p> {duration}</p>
+          <p> {movieData.name}</p>
+          <p> {movieData.originalName}</p>
+          <p> {movieData.rateImdb}</p>
+          <p> {movieData.year}</p>
+          <p> {movieData.country}</p>
+          <p> {movieData.director}</p>
+          <p> {movieData.genre}</p>
+          <p> {movieData.duration}</p>
         </div>
       </div>
     </div>
     <div className="movie-story ">
-      <p>{storyLine}</p>
+      <p>{movieData.storyLine}</p>
     </div>
   </div>
 );

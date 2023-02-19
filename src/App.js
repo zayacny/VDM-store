@@ -5,7 +5,7 @@ import Movie from "./components/Movie";
 import Footer from "./components/Footer";
 
 function App() {
-  const movie = {
+  const movieData = {
     img: movieComponentImage,
     name: "Топ Ган: Мэверик",
     originalName: "Top Gun: Maverick",
@@ -33,7 +33,7 @@ function App() {
       </header>
 
       <main className="App-main">
-        <Movie {...movie} />
+        <Movie {...movieData} />
       </main>
 
       <Footer />
