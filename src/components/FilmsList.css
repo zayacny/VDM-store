@@ -4,7 +4,7 @@
   height: fit-content;
   background-color: white;
   border: 1px solid;
-  padding: 10px 10px 5px 35px;
+  padding: 5px;
 }
 .leftSide {
   display: inline;
@@ -13,7 +13,7 @@
 .rightSide {
   display: inline;
   float: right;
-  color: rgb(110, 165, 42);
+  color: red;
 }
 .liStyle {
   /* display: flex;
@@ -28,5 +28,5 @@
 .liStyle:hover {
   color: whitesmoke;
   text-decoration: underline;
-  background-color: black;
+  background-color: grey;
 }

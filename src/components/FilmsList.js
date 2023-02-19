@@ -1,5 +1,6 @@
 import React from "react";
 import "./FilmsList.css";
+
 const films = [
   {
     name: "titanic",
