@@ -1,4 +1,4 @@
-.divStyle {
+.div-style {
   display: block;
   width: -webkit-fill-available;
   height: fit-content;
@@ -6,16 +6,16 @@
   border: 1px solid;
   padding: 5px;
 }
-.leftSide {
+.left-side {
   display: inline;
   float: left;
 }
-.rightSide {
+.right-side {
   display: inline;
   float: right;
   color: red;
 }
-.liStyle {
+.li-style {
   /* display: flex;
   flex-direction: row;
   flex-wrap: nowrap; */
@@ -25,7 +25,7 @@
   color: black;
   text-decoration: none;
 }
-.liStyle:hover {
+.li-style:hover {
   color: whitesmoke;
   text-decoration: underline;
   background-color: grey;
