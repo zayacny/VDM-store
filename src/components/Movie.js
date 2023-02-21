@@ -1,8 +1,21 @@
 import React from "react";
 import "./Movie.css";
+import { useEffect, useState } from "react";
 
-// function Movie({ movieData }) {
-function Movie(movieData) {
+function Movie() {
+  const [movieData, setMovieData] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3003/movie-data")
+      .then((response) => response.json())
+      .then((data) => setMovieData(data.movieData));
+  }, []);
+
+  console.log(movieData);
+  if (!movieData) {
+    return null;
+  }
+
   return (
     <div className="movie-container">
       <div className="movie-container-wrapper">
