@@ -1,23 +1,23 @@
 import logo from "./logo.svg";
-import movieComponentImage from "./components/images/topgun.jpg";
+import { useEffect, useState } from "react";
+// import movieComponentImage from "./components/images/topgun.jpg";
 import "./App.css";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";
 
 function App() {
-  const movieData = {
-    img: movieComponentImage,
-    name: "Топ Ган: Мэверик",
-    originalName: "Top Gun: Maverick",
-    rateImdb: 8.3,
-    year: 2022,
-    country: "США",
-    director: "Джозеф Косински",
-    genre: "Боевики",
-    duration: "02:10:32",
-    storyLine:
-      "Пит Митчелл - один из лучших пилотов, которому дали прозвище Мэверик. Он уже тридцать лет занимается любимым делом, но так и остается инструктором. Герой и сам не заинтересован в повышении по службе, поскольку это помешает ему проводить много времени за штурвалом самолета. В очередной группе новобранцев оказывается лейтенант Брэдли Брэдшоу, сын Ника Брэдшоу. С этого момента Питу предстоит сильно постараться, чтобы справиться с давними переживаниями. Он просто не имеет права отвлекаться от работы, поскольку ему необходимо отобрать группу лучших пилотов для выполнения особо важного задания...",
-  };
+  const [movieData, setMovieData] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3003/movie-data")
+      .then((response) => response.json())
+      .then((data) => setMovieData(data.movieData));
+  }, []);
+
+  console.log(movieData);
+  if (!movieData) {
+    return null;
+  }
 
   return (
     <div className="App">
@@ -33,6 +33,8 @@ function App() {
       </header>
 
       <main className="App-main">
+        {/* // Also it works: movieData={movieData} + function Movie({ movieData }) */}
+        {/* <Movie movieData={movieData} /> */}
         <Movie {...movieData} />
       </main>
 
