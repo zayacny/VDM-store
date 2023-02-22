@@ -3,18 +3,15 @@ import "./FilmsList.css";
 import { useEffect, useState } from "react";
 
 export default function ShowFilmsList() {
-  const [films, setFilms] = useState(null);
+  const [filmsList, setFilmsList] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3003/films-list")
       .then((response) => response.json())
-      .then((data) => {
-        setFilms(data.films);
-      });
+      .then((data) => setFilmsList(data.films));
   }, []);
-  console.log(films);
-  
-  const listOfFilms = films.map((film) => (
+  console.log(filmsList);
+  const listOfFilms = filmsList.map((film) => (
     <li key={film.name}>
       <a href={film.link} className="li-style">
         <div className="left-side">
@@ -28,5 +25,3 @@ export default function ShowFilmsList() {
   ));
   return <ul className="div-style">{listOfFilms}</ul>;
 }
-
-
