@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./FilmsList.css";
-import { useEffect, useState } from "react";
 
-export default function ShowFilmsList() {
+export default function FilmsList() {
   const [filmsList, setFilmsList] = useState([]);
 
   useEffect(() => {
@@ -10,7 +9,7 @@ export default function ShowFilmsList() {
       .then((response) => response.json())
       .then((data) => setFilmsList(data.films));
   }, []);
-  console.log(filmsList);
+
   const listOfFilms = filmsList.map((film) => (
     <li key={film.name}>
       <a href={film.link} className="li-style">
