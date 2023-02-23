@@ -1,6 +1,4 @@
 import logo from "./logo.svg";
-// import { useEffect, useState } from "react";
-// import movieComponentImage from "./components/images/topgun.jpg";
 import "./App.css";
 import Movie from "./components/Movie";
 import Footer from "./components/Footer";

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Movie.css";
-import { useEffect, useState } from "react";
 
-function Movie() {
+export default function Movie() {
   const [movieData, setMovieData] = useState(null);
 
   useEffect(() => {
@@ -11,7 +10,6 @@ function Movie() {
       .then((data) => setMovieData(data.movieData));
   }, []);
 
-  console.log(movieData);
   if (!movieData) {
     return null;
   }
@@ -56,5 +54,3 @@ function Movie() {
     </div>
   );
 }
-
-export default Movie;
