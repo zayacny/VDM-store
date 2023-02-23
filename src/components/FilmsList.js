@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./FilmsList.css";
-import { useEffect, useState } from "react";
 
-export default function ShowFilmsList() {
+export default function FilmsList() {
   const [filmsList, setFilmsList] = useState([]);
 
   useEffect(() => {
