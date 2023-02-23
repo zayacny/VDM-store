@@ -10,18 +10,18 @@ export default function ShowFilmsList() {
       .then((response) => response.json())
       .then((data) => setFilmsList(data.films));
   }, []);
-  console.log(filmsList);
+
   const listOfFilms = filmsList.map((film) => (
     <li key={film.name}>
-      <a href={film.link} className="li-style">
-        <div className="left-side">
+      <a href={film.link} className="film-link-body">
+        <div className="film-link-position-left">
           {film.name} ({film.year})
         </div>
-        <div className="right-side">
+        <div className="film-link-position-right">
           {film.director}, IMDb ({film.rating})
         </div>
       </a>
     </li>
   ));
-  return <ul className="div-style">{listOfFilms}</ul>;
+  return <ul className="films-list-body">{listOfFilms}</ul>;
 }
