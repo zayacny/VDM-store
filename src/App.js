@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Movie from "./components/Movie";
+import MovieDescription from "./components/MovieDescription";
 import Footer from "./components/Footer";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       </header>
 
       <main>
-        <Movie />
+        <MovieDescription />
       </main>
 
       <Footer />
