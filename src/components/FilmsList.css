@@ -1,0 +1,29 @@
+.films-list-body {
+  display: block;
+  width: -webkit-fill-available;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid;
+  padding: 5px;
+}
+.film-link-position-left {
+  display: inline;
+  float: left;
+}
+.film-link-position-right {
+  display: inline;
+  float: right;
+  color: red;
+}
+.film-link-body {
+  display: inherit;
+  margin: 5px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+.film-link-body:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+  background-color: grey;
+}
