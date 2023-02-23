@@ -17,7 +17,7 @@ function App() {
         </a>
       </header>
 
-      <main className="App-main">
+      <main>
         <Movie />
       </main>
 
