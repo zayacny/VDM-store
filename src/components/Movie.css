@@ -1,0 +1,43 @@
+.movie-header h2 {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.movie-info,
+.movie-story {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.movie-info {
+  display: flex;
+  height: 60vmin;
+  margin: 10px 15px;
+  border-radius: 5px;
+}
+
+.movie-image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-story {
+  margin: 0 15px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: #8D8C8C;
+}
+
+.cell {
+  flex: 1 1 auto;
+  color: #393939;
+}

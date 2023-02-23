@@ -1,0 +1,20 @@
+.App-footer-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.App-footer-list-item+.App-footer-list-item {
+  margin-left: 20px;
+}
+
+.App-footer-list-item>a {
+  text-decoration: none;
+  color: #8D8C8C;
+}
+
+.App-footer-list-item:hover {
+  text-decoration: underline;
+}
