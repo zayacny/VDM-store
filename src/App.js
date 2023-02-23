@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MovieDescription from "./components/MovieDescription";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,8 +19,6 @@ function App() {
       <main>
         <MovieDescription />
       </main>
-
-      <Footer />
     </div>
   );
 }

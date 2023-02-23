@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "./Footer";
 import "./MovieDescription.css";
 
 export default function MovieDescription() {
@@ -48,6 +49,7 @@ export default function MovieDescription() {
       <div className="movie-description-story ">
         <p>{movieDescriptionData.storyLine}</p>
       </div>
+      <Footer />
     </>
   );
 }
