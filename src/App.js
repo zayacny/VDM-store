@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import MovieDescription from "./components/MovieDescription";
+import { RouterProvider } from "react-router-dom";
+import router from "./router"
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         </a>
       </header>
 
-      <main>
-        <MovieDescription />
-      </main>
+      <div style={{background: 'red'}}>
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
