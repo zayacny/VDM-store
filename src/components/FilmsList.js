@@ -7,7 +7,7 @@ export default function FilmsList() {
   useEffect(() => {
     fetch("http://localhost:3003/films-list")
       .then((response) => response.json())
-      .then((data) => setFilmsList(data.films));
+      .then((films) => setFilmsList(films));
   }, []);
 
   const listOfFilms = filmsList.map((film) => (
