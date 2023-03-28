@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MovieDescription from "./components/MovieDescription";
+import AdminPanel from "./routes/AdminPanel";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       //   },
       // ],
     },
+    {
+      path: "/admin",
+      element: <AdminPanel/>,
+    }
   ]);
 
 export default router;
